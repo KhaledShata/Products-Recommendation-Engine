@@ -21,7 +21,6 @@ def load_txtembd():
 @st.cache_data
 def load_df():
     file_path = 'processed_df.zip'  # Path to the pickle file
-    file_path = r'E:\Omdena\Berlin-Chapter\Recommendation Model\processed_df.zip'  # Path to the pickle file
     processed_df= pd.read_csv(file_path, low_memory=False, encoding='utf-8')
     return processed_df
 
