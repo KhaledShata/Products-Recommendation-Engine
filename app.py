@@ -31,7 +31,7 @@ import time
 
 @st.cache_data
 def load_txtembd():
-    file_path = r'E:\Omdena\Berlin-Chapter\Recommendation Model\text_embeddings.pkl'  # Path to the pickle file
+    file_path = 'text_embeddings.pkl'  # Path to the pickle file
     with open(file_path, 'rb') as file:
         text_embeddings = pickle.load(file)
     return text_embeddings
@@ -39,7 +39,7 @@ def load_txtembd():
 
 @st.cache_data
 def load_df():
-    file_path = r'E:\Omdena\Berlin-Chapter\Recommendation Model\processed_df.pkl'  # Path to the pickle file
+    file_path = 'processed_df.zip'  # Path to the pickle file
     with open(file_path, 'rb') as file:
         processed_df = pickle.load(file)
     return processed_df
@@ -48,7 +48,7 @@ def load_df():
 
 @st.cache_data
 def load_vectorizer():
-    file_path = r'E:\Omdena\Berlin-Chapter\Recommendation Model\tfidf_vectorizer.pkl'  # Path to the pickle file
+    file_path = 'tfidf_vectorizer.pkl'  # Path to the pickle file
     with open(file_path, 'rb') as file:
         tfidf_vectorizer = pickle.load(file)
 
