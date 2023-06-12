@@ -6,28 +6,9 @@ from nltk.tokenize import word_tokenize
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import pandas as pd
-from IPython.display import Image, display, HTML
-nltk.download('punkt')
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-import requests
-from sentence_transformers import SentenceTransformer
-import seaborn as sns
-from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.cluster import KMeans
-from sklearn.metrics.pairwise import cosine_similarity
-from sklearn.decomposition import PCA
-import streamlit as st
-from streamlit import components
-from PIL import Image
-from io import BytesIO
 import pickle
 import streamlit as st
 from PIL import Image
-import imghdr
-import os
-import time
 
 @st.cache_data
 def load_txtembd():
