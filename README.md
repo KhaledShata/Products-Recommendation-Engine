@@ -29,4 +29,5 @@ https://www.kaggle.com/datasets/khaledatef1/berlin-grocery-products
 Experience our Recommendation Engine in action: [Try the Model](https://khaledatef00-products-recommendation-engine-app-d25gv7.streamlit.app/)
 
 
+Unfortunately the code for the project is private.
 
