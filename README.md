@@ -1,4 +1,5 @@
 # Products-Recommendation-Engine
+![image](https://github.com/KhaledShata/Products-Recommendation-Engine/assets/105244576/05868279-66a6-465c-b251-d6689c1bfb91)
 
 ## Overview
 This project was developed under the Omdena Berlin Chapter in Germany. It involved creating a sophisticated Recommendation Engine for products based in Berlin. Over an intense 8-week period, our global team of over 100 members collaborated to bring this innovative solution to fruition.
