@@ -16,7 +16,8 @@ This project was developed under the Omdena Berlin Chapter in Germany. It involv
 3. **Calculating Cosine Similarity:** Determines product relevance by measuring similarity with the user query.
 4. **Generating Recommendations:** Outputs a list of top product recommendations based on similarity scores.
 
-## Dataset Scrapped :  https://www.kaggle.com/datasets/khaledatef1/berlin-grocery-products
+## Dataset Scrapped :  
+https://www.kaggle.com/datasets/khaledatef1/berlin-grocery-products
 
 ## Technologies
 - Text Preprocessing
