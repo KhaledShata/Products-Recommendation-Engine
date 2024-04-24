@@ -2,7 +2,8 @@
 ![image](https://github.com/KhaledShata/Products-Recommendation-Engine/assets/105244576/05868279-66a6-465c-b251-d6689c1bfb91)
 
 ## Overview
-This project was developed under the Omdena Berlin Chapter in Germany. It involved creating a sophisticated Recommendation Engine for products based in Berlin. Over an intense 8-week period, our global team of over 100 members collaborated to bring this innovative solution to fruition.
+This project involves creating a sophisticated Recommendation Engine for products based in Berlin. 
+
 
 ## Project Journey
 - **Web Scraping & Data Collection:** Sourced product data through comprehensive web scraping.
@@ -18,6 +19,8 @@ This project was developed under the Omdena Berlin Chapter in Germany. It involv
 4. **Generating Recommendations:** Outputs a list of top product recommendations based on similarity scores.
 
 ## Dataset Scrapped :  
+
+This dataset comprises a comprehensive collection of product data scraped from multiple retail platforms, designed to facilitate the development of a product recommendation engine. It includes a variety of products from diverse categories, enhancing its utility for machine learning projects focused on recommendation systems, natural language processing, and retail analytics.
 https://www.kaggle.com/datasets/khaledatef1/berlin-grocery-products
 
 ## Technologies
@@ -26,7 +29,7 @@ https://www.kaggle.com/datasets/khaledatef1/berlin-grocery-products
 - Model Deployment Technologies
 
 ## Try It Out
-Experience our Recommendation Engine in action: [Try the Model](https://khaledatef00-products-recommendation-engine-app-d25gv7.streamlit.app/)
+Experience the Recommendation Engine in action: [Try the Model](https://khaledatef00-products-recommendation-engine-app-d25gv7.streamlit.app/)
 
 
 Unfortunately the code for the project is private.
