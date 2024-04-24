@@ -16,14 +16,15 @@ This project was developed under the Omdena Berlin Chapter in Germany. It involv
 3. **Calculating Cosine Similarity:** Determines product relevance by measuring similarity with the user query.
 4. **Generating Recommendations:** Outputs a list of top product recommendations based on similarity scores.
 
+## Dataset Scrapped :  https://www.kaggle.com/datasets/khaledatef1/berlin-grocery-products
+
 ## Technologies
 - Text Preprocessing
 - Cosine Similarity Analysis
 - Model Deployment Technologies
 
-## Team
-Led by Chapter Lead Laura Cécile, with invaluable contributions from Juan Olano, Catalin Vulcan, Ziba Atak, Swati Zambre, Poornesh Shiva, Wallace Ferreira, Mohamed Hassan, and many others.
-
 ## Try It Out
 Experience our Recommendation Engine in action: [Try the Model](https://khaledatef00-products-recommendation-engine-app-d25gv7.streamlit.app/)
+
+
 
