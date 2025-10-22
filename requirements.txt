@@ -1,4 +1,4 @@
 scikit-learn
 nltk
-pandas
+pandas==1.5.3
 Pillow

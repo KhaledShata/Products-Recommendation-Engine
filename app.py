@@ -24,16 +24,8 @@ def load_txtembd():
 
 @st.cache_data
 def load_df():
-    zip_path = os.path.join(BASE_DIR, "Data", "processed_df.zip")
-    extracted_path = os.path.join(BASE_DIR, "Data", "processed_df.pkl")
-
-    # Unzip if needed
-    if not os.path.exists(extracted_path) and os.path.exists(zip_path):
-        with zipfile.ZipFile(zip_path, "r") as zip_ref:
-            zip_ref.extractall(os.path.join(BASE_DIR, "Data"))
-
-    with open(extracted_path, "rb") as file:
-        processed_df = pickle.load(file)
+    file_path = os.path.join(BASE_DIR, "Data", "processed_df.csv")
+    processed_df = pd.read_csv(file_path)
     return processed_df
 
 
