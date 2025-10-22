@@ -1,7 +1,8 @@
 import re
+import zipfile
 import nltk
 import nltk_download
-
+import os
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -11,9 +12,11 @@ import pickle
 import streamlit as st
 from PIL import Image
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
 @st.cache_data
 def load_txtembd():
-    file_path = 'text_embeddings.pkl'  # Path to the pickle file
+    file_path = os.path.join(BASE_DIR, "Data", "text_embeddings.pkl")
     with open(file_path, 'rb') as file:
         text_embeddings = pickle.load(file)
     return text_embeddings
@@ -21,15 +24,23 @@ def load_txtembd():
 
 @st.cache_data
 def load_df():
-    file_path = 'processed_df.zip'  # Path to the pickle file
-    processed_df= pd.read_csv(file_path, low_memory=False, encoding='utf-8')
+    zip_path = os.path.join(BASE_DIR, "Data", "processed_df.zip")
+    extracted_path = os.path.join(BASE_DIR, "Data", "processed_df.pkl")
+
+    # Unzip if needed
+    if not os.path.exists(extracted_path) and os.path.exists(zip_path):
+        with zipfile.ZipFile(zip_path, "r") as zip_ref:
+            zip_ref.extractall(os.path.join(BASE_DIR, "Data"))
+
+    with open(extracted_path, "rb") as file:
+        processed_df = pickle.load(file)
     return processed_df
 
 
 
 @st.cache_data
 def load_vectorizer():
-    file_path = 'tfidf_vectorizer.pkl'  # Path to the pickle file
+    file_path = os.path.join(BASE_DIR, "Data", "tfidf_vectorizer.pkl")  # Path to the pickle file
     with open(file_path, 'rb') as file:
         tfidf_vectorizer = pickle.load(file)
 
